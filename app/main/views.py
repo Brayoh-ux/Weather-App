@@ -3,5 +3,15 @@ from . import main
 
 @main.route('/')
 def index():
-    title="Weather App"
-    return render_template('index.html', title=title)
+
+    return render_template('index.html')
+
+@main.route('/feedback')
+def feedback():	
+		
+		return render_template('feedback.html')
+
+@main.route('/about')
+def about():	
+		
+		return render_template('about.html')
