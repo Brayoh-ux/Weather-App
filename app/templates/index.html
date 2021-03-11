@@ -3,18 +3,42 @@
 {% block content %}
 
 <div class="container-fluid">
-    <img src="../static/images/background10.jpg" alt="">
+    <img class="img" src="../static/images/background10.jpg" alt="">
     <div class="caption text-center">
+        
         <h1>Weather App</h1>
         <h4>An app that showcases the weather of a particular city's location</h4>
-        <div class="wrap">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Type your city's location">
-                <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                </button>
+        
+        <form action="" method="POST" class="wra search" >
+            <input type="text" class="searchTerm " style="width: 40%; margin-left: 40vmin;" name="city" placeholder="Type your city's location">
+            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+        </form>
+
+        {% for weather in weather_data %}
+        <br><br>
+
+        <div class="card col w-50 ">
+            <div class="card-image w-25 " >
+               <h2>
+                <!-- <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" alt=""> -->
+         
+                {{ weather.city}}
+               </h2>
+           
             </div>
+            
+            <div class="card_body ml-5">
+                <p>{{ weather.description }}</p>
+                <p> {{ weather.temperature }} <sup> 0 </sup> Celcius </p>
+            </div>
+            
+            
         </div>
+        <br><br><br>
+
+        {% endfor %}
+        <br>
+        
     </div>
 </div>
 
