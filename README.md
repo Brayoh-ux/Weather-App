@@ -34,7 +34,7 @@ It's source code is available on GitHub at https://github.com/Brayoh-ux/Weather-
 
 ## Setup & Run instructions
 - Install the dependencies listed on `requirements.txt`.
-- Configure your app to include `SECRET_KEY`,`WEATHER_API_KEY`, among other environment variables as listed in `start.sh.sample`
+- Configure your app to include `SECRET_KEY`,`WEATHER_API_KEY`, among other environment variables as listed in `start.sh`
 - Run your app on `development` config for debugging purposes.
 
 To contribute to this project on any modules, follow these easy steps:
