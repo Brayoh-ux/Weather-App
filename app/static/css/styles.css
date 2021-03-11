@@ -6,26 +6,26 @@ html,
 body {
     scroll-behavior: smooth;
     color: black;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+    /* margin: 0; */
+    /* height: 100%; */
+    /* width: 100%; */
     font-family: 'Lato', sans-serif;
     font-size: medium;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-img {
-    min-height: 100%;
-    min-width: 100%;
-    height: auto;
-    width: auto;
-    position: absolute;
-    top: -100%;
+/* .img { */
+    /* min-height: 100%; */
+    /* min-width: 100%; */
+    /* height: auto;
+    width: auto; */
+    /* position: absolute; */
+    /* top: -100%;
     bottom: -100%;
     left: -100%;
     right: -100%;
     margin: auto;
-}
+} */
 
 .navbar {
     background: rgba(0, 0, 0, 0.6) !important;
@@ -40,11 +40,11 @@ img {
 }
 
 .caption {
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 38%;
-    z-index: 1;
+    /* width: 100%; */
+    /* max-width: 100%; */
+    /* position: absolute; */
+    /* top: 38%; */
+    /* z-index: 1; */
     color: white;
 }
 
@@ -66,21 +66,22 @@ img {
     text-transform: none;
 }
 
-.search {
-    width: 100%;
-    position: relative;
-    display: flex;
-}
+/* .search { */
+    /* width: 100%; */
+    /* position: relative; */
+    /* display: flex; */
+/* } */
 
 .searchTerm {
-    width: 100%;
+    /* width: 40%; */
     border: 3px solid #F46036;
     border-right: none;
     padding: 5px;
-    height: 36px;
+    /* height: 36px; */
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #B5CA8D;
+    
 }
 
 .searchTerm:focus {
@@ -89,21 +90,12 @@ img {
 
 .searchButton {
     width: 40px;
-    height: 36px;
+    /* height: 36px; */
     border: 1px solid #F46036;
     background: #F46036;
     text-align: center;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    /* border-radius: 0 5px 5px 0; */
     cursor: pointer;
     font-size: 20px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap {
-    width: 30%;
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
