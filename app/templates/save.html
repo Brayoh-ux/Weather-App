@@ -8,8 +8,8 @@ padding: 30vmin;">
     <!-- <img class="img" src="../static/images/background10.jpg" alt=""> -->
     <div class="caption text-center">
         
-        <h1 style="color: #fff;"  >Weather App</h1>
-        <h4 style="color: #fff;">An app that showcases the weather of a particular city's location</h4> <br>
+        <h1>Weather App</h1>
+        <h4>An app that showcases the weather of a particular city's location</h4>
         
         <form action="" method="POST" class="wra search" >
             <input type="text" class="searchTerm " style="width: 50%;" name="city" placeholder="Type your city's location">
@@ -20,7 +20,7 @@ padding: 30vmin;">
 
         {% for weather in weather_data %}
 
-        <div class="card col w-25 mr-3 " style=" display: inline; border-color: blue; margin-right: 10vmin; text-align: center; padding-left: 20vmin;">
+        <div class="card col w-25 m-2 " style="float: left; display: inline; border-color: blue; margin: 5vmin;">
             <div class="card-image" >
                <h2>
                 <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" style="width: 2em;  height: 2em; " alt="">
@@ -42,6 +42,5 @@ padding: 30vmin;">
         
     </div>
 </div>
-
 
 {% endblock %}

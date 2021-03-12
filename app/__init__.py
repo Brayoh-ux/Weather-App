@@ -15,13 +15,14 @@ def create_app(config_name):
 
 
     app.config.from_object(Config)
-    # app.config.from_object(config_options[config_name])
+    app.config.from_object(config_options[config_name])
     # app.config[Config]
+    # app.config[DevConfig]
    
 
     db.init_app(app)
     bootstrap.init_app(app)
-    migrate.init_app(app)
+    migrate.init_app(app, db)
 
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
